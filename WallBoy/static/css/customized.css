@@ -1,0 +1,1241 @@
+/* Custom */
+body {
+    background-color: black;
+}
+
+li {
+    font-size: 1rem;
+}
+
+.mainImage {
+    width: 25%; 
+    margin-bottom: 150px; 
+    margin-right: 10px;
+}
+
+.horizontal-center {
+  margin: 0;
+  top: 2%;
+  -ms-transform: translateX(20%);
+  transform: translateX(17%);
+}
+
+.modal-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.homescreen {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 900px;
+    max-width: 75%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto
+}
+
+@media (max-width: 1180px) {
+    .homescreen {
+        max-width: 100%
+    }
+}
+
+.homescreen--banner {
+    position: relative;
+    height: 475px
+}
+
+.homescreen--banner::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    -webkit-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+    border: 5px solid #0f33ff;
+    border-right-color: transparent;
+    border-bottom-color: transparent
+}
+
+.homescreen--banner::after {
+    content: "";
+    position: absolute;
+    top: 75px;
+    left: 400px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background-color: #0f33ff
+}
+
+.homescreen--banner h2 {
+    position: relative;
+    margin-top: 35px;
+    font-size: 68px;
+    font-weight: 900;
+    line-height: 1;
+    z-index: 1
+}
+
+.homescreen--banner h2::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 268px;
+    width: 30px;
+    height: 30px;
+    background-color: #0f33ff;
+    border-radius: 50%
+}
+
+.homescreen--banner h2::after {
+    content: "";
+    position: absolute;
+    top: 255px;
+    left: 255px;
+    width: 10px;
+    height: 10px;
+    background-color: #0f33ff
+}
+
+.homescreen--banner a {
+    padding: 5px 17px 5px 0;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: transparent
+}
+
+.homescreen--banner a:hover svg {
+    left: 10px
+}
+
+.homescreen--banner a svg {
+    position: relative;
+    left: 5px;
+    width: 15px;
+    fill: #fff;
+    -webkit-transition: left .2s ease-in-out;
+    transition: left .2s ease-in-out
+}
+
+.homescreen--banner img {
+    position: absolute;
+    bottom: -90px;
+    right: -12px
+}
+
+.homescreen--options {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 500px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.homescreen--options > a {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    text-decoration: none;
+    color: #fff;
+    /* border: 3px solid #3f57df; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    margin-right: 50px;
+}
+
+.homescreen--options > a:nth-child(1) {
+    background-image: url("https://www.apple.com/v/iphone-14-pro/b/images/overview/hero/hero_endframe__cvklg0xk3w6e_large.jpg")
+}
+
+/* .homescreen--options > a:nth-child(2) {
+    background-image: url("https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU")
+} */
+
+.homescreen--options > a:nth-child(3) {
+    background-image: url("https://icones.pro/wp-content/uploads/2021/06/icone-github-rose.png")
+} 
+
+.homescreen--options > a:hover h3 {
+    bottom: -60px
+}
+
+.homescreen--options h3 {
+    position: absolute;
+    bottom: -30px;
+    left: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    -webkit-transition: bottom .2s ease-in-out, left .2s ease-in-out;
+    transition: bottom .2s ease-in-out, left .2s ease-in-out
+}
+
+@media (max-width: 767px) {
+    .homescreen--banner {
+        height: 305px
+    }
+
+    .homescreen--banner::before {
+        top: 0;
+        left: 125px
+    }
+
+    .homescreen--banner::after {
+        top: 35px;
+        left: 260px
+    }
+
+    .homescreen--banner h2 {
+        margin-top: 10px;
+        font-size: 44px
+    }
+
+    .homescreen--banner h2::before {
+        top: 28px;
+        left: 168px
+    }
+
+    .homescreen--banner h2::after {
+        top: 163px;
+        left: 163px
+    }
+
+    .homescreen--banner img {
+        width: 315px
+    }
+}
+
+@media (max-width: 600px) {
+    .homescreen--banner {
+        height: auto
+    }
+
+    .homescreen--banner::before {
+        left: 155px
+    }
+
+    .homescreen--banner::after {
+        left: 310px
+    }
+
+    .homescreen--banner h2 {
+        margin-top: 0;
+        font-size: 55px
+    }
+
+    .homescreen--banner h2::before {
+        top: 43px;
+        left: 214px
+    }
+
+    .homescreen--banner h2::after {
+        top: 205px;
+        left: 205px
+    }
+
+    .homescreen--banner img {
+        display: none
+    }
+
+    .homescreen--options {
+        display: none
+    }
+}
+
+/* Aboue Director  */
+
+
+
+
+/* news screen */
+.newsscreen {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 900px;
+    max-width: 75%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto
+}
+
+@media (max-width: 1180px) {
+    .newsscreen {
+        max-width: 100%
+    }
+}
+
+.newsscreen--banner {
+    position: relative;
+    height: 475px
+}
+
+.newsscreen--banner::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    -webkit-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+    border: 5px solid #0f33ff;
+    border-right-color: transparent;
+    border-bottom-color: transparent
+}
+
+.newsscreen--banner::after {
+    content: "";
+    position: absolute;
+    top: 75px;
+    left: 400px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background-color: #0f33ff
+}
+
+.newsscreen--banner h2 {
+    position: relative;
+    margin-top: 35px;
+    font-size: 68px;
+    font-weight: 900;
+    line-height: 1;
+    z-index: 1
+}
+
+.newsscreen--banner h2::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 268px;
+    width: 30px;
+    height: 30px;
+    background-color: #0f33ff;
+    border-radius: 50%
+}
+
+.newsscreen--banner h2::after {
+    content: "";
+    position: absolute;
+    top: 255px;
+    left: 255px;
+    width: 10px;
+    height: 10px;
+    background-color: #0f33ff
+}
+
+.newsscreen--banner a {
+    padding: 5px 17px 5px 0;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: transparent
+}
+
+.newsscreen--banner a:hover svg {
+    left: 10px
+}
+
+.newsscreen--banner a svg {
+    position: relative;
+    left: 5px;
+    width: 15px;
+    fill: #fff;
+    -webkit-transition: left .2s ease-in-out;
+    transition: left .2s ease-in-out
+}
+
+.newsscreen--banner img {
+    position: absolute;
+    bottom: -90px;
+    right: -12px
+}
+
+.newsscreen--options {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 500px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.newsscreen--options > a {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    text-decoration: none;
+    color: #fff;
+    /* border: 3px solid #3f57df; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    margin-right: 50px;
+}
+
+.newsscreen--options > a:nth-child(1) {
+    background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-storage-select-202209-6-1inch-product-red?wid=2560&hei=1440&fmt=jpeg&qlt=95&.v=1660691573456")
+}
+
+/* .newsscreen--options > a:nth-child(2) {
+    background-image: url("https://www.apple.com/v/iphone-14-pro/b/images/overview/hero/hero_endframe__cvklg0xk3w6e_large.jpg")
+} */
+
+.newsscreen--options > a:nth-child(3) {
+    background-image: url("https://icones.pro/wp-content/uploads/2021/06/icone-github-rouge.png")
+}
+
+.newsscreen--options > a:hover h3 {
+    bottom: -60px
+}
+
+.newsscreen--options h3 {
+    position: absolute;
+    bottom: -38px;
+    left: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    -webkit-transition: bottom .2s ease-in-out, left .2s ease-in-out;
+    transition: bottom .2s ease-in-out, left .2s ease-in-out
+}
+
+@media (max-width: 767px) {
+    .newsscreen--banner {
+        height: 305px
+    }
+
+    .newsscreen--banner::before {
+        top: 0;
+        left: 125px
+    }
+
+    .newsscreen--banner::after {
+        top: 35px;
+        left: 260px
+    }
+
+    .newsscreen--banner h2 {
+        margin-top: 10px;
+        font-size: 44px
+    }
+
+    .newsscreen--banner h2::before {
+        top: 28px;
+        left: 168px
+    }
+
+    .newsscreen--banner h2::after {
+        top: 163px;
+        left: 163px
+    }
+
+    .newsscreen--banner img {
+        width: 315px
+    }
+}
+
+@media (max-width: 600px) {
+    .newsscreen--banner {
+        height: auto
+    }
+
+    .newsscreen--banner::before {
+        left: 155px
+    }
+
+    .newsscreen--banner::after {
+        left: 310px
+    }
+
+    .newsscreen--banner h2 {
+        margin-top: 0;
+        font-size: 55px
+    }
+
+    .newsscreen--banner h2::before {
+        top: 43px;
+        left: 214px
+    }
+
+    .newsscreen--banner h2::after {
+        top: 205px;
+        left: 205px
+    }
+
+    .newsscreen--banner img {
+        display: none
+    }
+
+    .newsscreen--options {
+        display: none
+    }
+}
+
+/* Search screen*/
+.searchscreen {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 900px;
+    max-width: 75%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto
+}
+
+@media (max-width: 1180px) {
+    .searchscreen {
+        max-width: 100%
+    }
+}
+
+.searchscreen--banner {
+    position: relative;
+    height: 475px
+}
+
+.searchscreen--banner::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    -webkit-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+    border: 5px solid #0f33ff;
+    border-right-color: transparent;
+    border-bottom-color: transparent
+}
+
+.searchscreen--banner::after {
+    content: "";
+    position: absolute;
+    top: 75px;
+    left: 400px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background-color: #0f33ff
+}
+
+.searchscreen--banner h2 {
+    position: relative;
+    margin-top: 35px;
+    font-size: 68px;
+    font-weight: 900;
+    line-height: 1;
+    z-index: 1
+}
+
+.searchscreen--banner h2::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 268px;
+    width: 30px;
+    height: 30px;
+    background-color: #0f33ff;
+    border-radius: 50%
+}
+
+.searchscreen--banner h2::after {
+    content: "";
+    position: absolute;
+    top: 255px;
+    left: 255px;
+    width: 10px;
+    height: 10px;
+    background-color: #0f33ff
+}
+
+.searchscreen--banner a {
+    padding: 5px 17px 5px 0;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: transparent
+}
+
+.searchscreen--banner a:hover svg {
+    left: 10px
+}
+
+.searchscreen--banner a svg {
+    position: relative;
+    left: 5px;
+    width: 15px;
+    fill: #fff;
+    -webkit-transition: left .2s ease-in-out;
+    transition: left .2s ease-in-out
+}
+
+.searchscreen--banner img {
+    position: absolute;
+    bottom: -90px;
+    right: -12px
+}
+
+.searchscreen--options {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 500px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.searchscreen--options > a {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    text-decoration: none;
+    color: #fff;
+    /* border: 3px solid #3f57df; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    margin-right: 50px;
+}
+
+.searchscreen--options > a:nth-child(1) {
+    background-image: url("https://i.expansys.net/img/b/375522/apple-iphone-13-pro-5g-dual-nano-sim.jpg")
+}
+
+/* .searchscreen--options > a:nth-child(2) {
+    background-image: url("https://www.apple.com/v/iphone-14-pro/b/images/overview/hero/hero_endframe__cvklg0xk3w6e_large.jpg")
+} */
+
+.searchscreen--options > a:nth-child(3) {
+    background-image: url("https://icones.pro/wp-content/uploads/2021/06/icone-github-verte.png")
+}
+
+.searchscreen--options > a:hover h3 {
+    bottom: -60px
+}
+
+.searchscreen--options h3 {
+    position: absolute;
+    bottom: -38px;
+    left: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    -webkit-transition: bottom .2s ease-in-out, left .2s ease-in-out;
+    transition: bottom .2s ease-in-out, left .2s ease-in-out
+}
+
+@media (max-width: 767px) {
+    .searchscreen--banner {
+        height: 305px
+    }
+
+    .searchscreen--banner::before {
+        top: 0;
+        left: 125px
+    }
+
+    .searchscreen--banner::after {
+        top: 35px;
+        left: 260px
+    }
+
+    .searchscreen--banner h2 {
+        margin-top: 10px;
+        font-size: 44px
+    }
+
+    .searchscreen--banner h2::before {
+        top: 28px;
+        left: 168px
+    }
+
+    .searchscreen--banner h2::after {
+        top: 163px;
+        left: 163px
+    }
+
+    .searchscreen--banner img {
+        width: 315px
+    }
+}
+
+@media (max-width: 600px) {
+    .searchscreen--banner {
+        height: auto
+    }
+
+    .searchscreen--banner::before {
+        left: 155px
+    }
+
+    .searchscreen--banner::after {
+        left: 310px
+    }
+
+    .searchscreen--banner h2 {
+        margin-top: 0;
+        font-size: 55px
+    }
+
+    .searchscreen--banner h2::before {
+        top: 43px;
+        left: 214px
+    }
+
+    .searchscreen--banner h2::after {
+        top: 205px;
+        left: 205px
+    }
+
+    .searchscreen--banner img {
+        display: none
+    }
+
+    .searchscreen--options {
+        display: none
+    }
+}
+
+/* My Asset */
+.myassetscreen {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 900px;
+    max-width: 75%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto
+}
+
+@media (max-width: 1180px) {
+    .myassetscreen {
+        max-width: 100%
+    }
+}
+
+.myassetscreen--banner {
+    position: relative;
+    height: 475px
+}
+
+.myassetscreen--banner::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    -webkit-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+    border: 5px solid #0f33ff;
+    border-right-color: transparent;
+    border-bottom-color: transparent
+}
+
+.myassetscreen--banner::after {
+    content: "";
+    position: absolute;
+    top: 75px;
+    left: 400px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background-color: #0f33ff
+}
+
+.myassetscreen--banner h2 {
+    position: relative;
+    margin-top: 35px;
+    font-size: 68px;
+    font-weight: 900;
+    line-height: 1;
+    z-index: 1
+}
+
+.myassetscreen--banner h2::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 268px;
+    width: 30px;
+    height: 30px;
+    background-color: #0f33ff;
+    border-radius: 50%
+}
+
+.myassetscreen--banner h2::after {
+    content: "";
+    position: absolute;
+    top: 255px;
+    left: 255px;
+    width: 10px;
+    height: 10px;
+    background-color: #0f33ff
+}
+
+.myassetscreen--banner a {
+    padding: 5px 17px 5px 0;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: transparent
+}
+
+.myassetscreen--banner a:hover svg {
+    left: 10px
+}
+
+.myassetscreen--banner a svg {
+    position: relative;
+    left: 5px;
+    width: 15px;
+    fill: #fff;
+    -webkit-transition: left .2s ease-in-out;
+    transition: left .2s ease-in-out
+}
+
+.myassetscreen--banner img {
+    position: absolute;
+    bottom: -90px;
+    right: -12px
+}
+
+.myassetscreen--options {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 500px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.myassetscreen--options > a {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    text-decoration: none;
+    color: #fff;
+    /* border: 3px solid #3f57df; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    margin-right: 50px;
+}
+
+.myassetscreen--options > a:nth-child(1) {
+    background-image: url("https://www.cnet.com/a/img/resize/1b60ab26172a3eaea03181c8431a2a7425934e1d/hub/2021/05/24/ff2962f8-cdea-48f2-b71d-55dcc2fb2296/pink-iphone-13.jpg?auto=webp&width=1200")
+}
+
+/* .myassetscreen--options > a:nth-child(2) {
+    background-image: url("https://www.apple.com/v/iphone-14-pro/b/images/overview/hero/hero_endframe__cvklg0xk3w6e_large.jpg")
+} */
+
+.myassetscreen--options > a:nth-child(3) {
+    background-image: url("https://icones.pro/wp-content/uploads/2021/06/icone-github-rose.png")
+}
+
+.myassetscreen--options > a:hover h3 {
+    bottom: -60px
+}
+
+.myassetscreen--options h3 {
+    position: absolute;
+    bottom: -38px;
+    left: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    -webkit-transition: bottom .2s ease-in-out, left .2s ease-in-out;
+    transition: bottom .2s ease-in-out, left .2s ease-in-out
+}
+
+@media (max-width: 767px) {
+    .myassetscreen--banner {
+        height: 305px
+    }
+
+    .myassetscreen--banner::before {
+        top: 0;
+        left: 125px
+    }
+
+    .myassetscreen--banner::after {
+        top: 35px;
+        left: 260px
+    }
+
+    .myassetscreen--banner h2 {
+        margin-top: 10px;
+        font-size: 44px
+    }
+
+    .myassetscreen--banner h2::before {
+        top: 28px;
+        left: 168px
+    }
+
+    .myassetscreen--banner h2::after {
+        top: 163px;
+        left: 163px
+    }
+
+    .myassetscreen--banner img {
+        width: 315px
+    }
+}
+
+@media (max-width: 600px) {
+    .myassetscreen--banner {
+        height: auto
+    }
+
+    .myassetscreen--banner::before {
+        left: 155px
+    }
+
+    .myassetscreen--banner::after {
+        left: 310px
+    }
+
+    .myassetscreen--banner h2 {
+        margin-top: 0;
+        font-size: 55px
+    }
+
+    .myassetscreen--banner h2::before {
+        top: 43px;
+        left: 214px
+    }
+
+    .myassetscreen--banner h2::after {
+        top: 205px;
+        left: 205px
+    }
+
+    .myassetscreen--banner img {
+        display: none
+    }
+
+    .myassetscreen--options {
+        display: none
+    }
+}
+
+.myinfoscreen {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 900px;
+    max-width: 75%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto
+}
+
+@media (max-width: 1180px) {
+    .myinfoscreen {
+        max-width: 100%
+    }
+}
+
+.myinfoscreen--banner {
+    position: relative;
+    height: 475px
+}
+
+.myinfoscreen--banner::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    -webkit-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+    border: 5px solid #0f33ff;
+    border-right-color: transparent;
+    border-bottom-color: transparent
+}
+
+.myinfoscreen--banner::after {
+    content: "";
+    position: absolute;
+    top: 75px;
+    left: 400px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background-color: #0f33ff
+}
+
+.myinfoscreen--banner h2 {
+    position: relative;
+    margin-top: 35px;
+    font-size: 68px;
+    font-weight: 900;
+    line-height: 1;
+    z-index: 1
+}
+
+.myinfoscreen--banner h2::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 268px;
+    width: 30px;
+    height: 30px;
+    background-color: #0f33ff;
+    border-radius: 50%
+}
+
+.myinfoscreen--banner h2::after {
+    content: "";
+    position: absolute;
+    top: 255px;
+    left: 255px;
+    width: 10px;
+    height: 10px;
+    background-color: #0f33ff
+}
+
+.myinfoscreen--banner a {
+    padding: 5px 17px 5px 0;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: transparent
+}
+
+.myinfoscreen--banner a:hover svg {
+    left: 10px
+}
+
+.myinfoscreen--banner a svg {
+    position: relative;
+    left: 5px;
+    width: 15px;
+    fill: #fff;
+    -webkit-transition: left .2s ease-in-out;
+    transition: left .2s ease-in-out
+}
+
+.myinfoscreen--banner img {
+    position: absolute;
+    bottom: -90px;
+    right: -12px
+}
+
+.myinfoscreen--options {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 500px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.myinfoscreen--options > a {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    text-decoration: none;
+    color: #fff;
+    /* border: 3px solid #3f57df; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    margin-right: 50px;
+}
+
+.myinfoscreen--options > a:nth-child(1) {
+    background-image: url("https://i.insider.com/61eb6bc72b43ff00185e260f?width=1200&format=jpeg")
+}
+
+/* .myinfoscreen--options > a:nth-child(2) {
+    background-image: url("https://www.apple.com/v/iphone-14-pro/b/images/overview/hero/hero_endframe__cvklg0xk3w6e_large.jpg")
+} */
+
+.myinfoscreen--options > a:nth-child(3) {
+    background-image: url("https://icones.pro/wp-content/uploads/2021/06/icone-github-orange.png")
+}
+
+.myinfoscreen--options > a:hover h3 {
+    bottom: -60px
+}
+
+.myinfoscreen--options h3 {
+    position: absolute;
+    bottom: -38px;
+    left: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    -webkit-transition: bottom .2s ease-in-out, left .2s ease-in-out;
+    transition: bottom .2s ease-in-out, left .2s ease-in-out
+}
+
+@media (max-width: 767px) {
+    .myinfoscreen--banner {
+        height: 305px
+    }
+
+    .myinfoscreen--banner::before {
+        top: 0;
+        left: 125px
+    }
+
+    .myinfoscreen--banner::after {
+        top: 35px;
+        left: 260px
+    }
+
+    .myinfoscreen--banner h2 {
+        margin-top: 10px;
+        font-size: 44px
+    }
+
+    .myinfoscreen--banner h2::before {
+        top: 28px;
+        left: 168px
+    }
+
+    .myinfoscreen--banner h2::after {
+        top: 163px;
+        left: 163px
+    }
+
+    .myinfoscreen--banner img {
+        width: 315px
+    }
+}
+
+@media (max-width: 600px) {
+    .myinfoscreen--banner {
+        height: auto
+    }
+
+    .myinfoscreen--banner::before {
+        left: 155px
+    }
+
+    .myinfoscreen--banner::after {
+        left: 310px
+    }
+
+    .myinfoscreen--banner h2 {
+        margin-top: 0;
+        font-size: 55px
+    }
+
+    .myinfoscreen--banner h2::before {
+        top: 43px;
+        left: 214px
+    }
+
+    .myinfoscreen--banner h2::after {
+        top: 205px;
+        left: 205px
+    }
+
+    .myinfoscreen--banner img {
+        display: none
+    }
+
+    .myinfoscreen--options {
+        display: none
+    }
+}
